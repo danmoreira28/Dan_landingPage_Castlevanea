@@ -1,6 +1,51 @@
-$CorDeFundo: #b61515;
+@use 'reset';
+@use 'variables';
+@use 'hero';
 
 
 body {
-    background-color: $CorDeFundo;
+    background-color: variables.$corDeFundo;
+    background-image: url(../images/hero_desktop.jpeg);
 }
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px){
+    @include text(18px);
+    color: variables.$corTextoSecundario;
+}
+
+.text--big{
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.link-text{
+    @include text(18px);
+    color: variables.$corTextoSecundario;
+    text-decoration: underline
+}
+
+.title--big{
+    @include title(44px);
+}
+
+.title{
+    @include title;
+}
+
+.title--small{
+    @include title(28px);
+}
+
