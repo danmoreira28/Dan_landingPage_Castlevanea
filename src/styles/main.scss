@@ -5,7 +5,6 @@
 
 body {
     background-color: variables.$corDeFundo;
-    background-image: url(../images/hero_desktop.jpeg);
 }
 
 @mixin text($fontSize: 16px){
