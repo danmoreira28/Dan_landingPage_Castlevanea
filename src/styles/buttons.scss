@@ -7,6 +7,7 @@
     background-color: transparent;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 
 
     &--primary{
@@ -14,11 +15,11 @@
     }
 
     &--secundary{
-        margin-right: 8px;
-        margin-left: 8px;
+        margin: 8px;
         background-color: #f40612;
         border: 1px solid #f40612;
         border-radius: 2px;
+
     }
 
     &:hover{   
